@@ -1,0 +1,154 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI";
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4a6fa5;
+  padding: 15px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background: #eef2f7;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hero-text button {
+  background: #4a6fa5;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.hero-text button:hover {
+  background: #36527a;
+  transform: scale(1.05);  /
+}
+
+.hero-img img {
+  max-width: 350px;   
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  background: white;
+}
+
+.feature-card {
+  background: #4a6fa5;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+.feature-card i {
+  margin-bottom: 15px;
+  color: #ffd700;   
+  display: block;
+  font-size: 2rem;
+  transition: transform 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card:hover i {
+  transform: rotate(15deg) scale(1.2);  
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-img img {
+    max-width: 250px;  
+  }
+}
